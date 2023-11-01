@@ -1,0 +1,233 @@
+
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+/* ESTILO GERAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    font-family: 'Hanken Grotesk', sans-serif;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* border: 1px solid red; */
+    width: 600px;
+    height: 380px;
+    /* padding: 24px; */
+    display: flex;
+    border-radius: 24px;
+    box-shadow: 10px 10px 10px -12px #00000030;
+}
+
+h1 {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* CARD LEFT */
+
+
+.card-left {
+    /* border: 1px solid green; */
+    background: linear-gradient(#5a34f3, #3e11f3, #2e2be9);
+    animation: gradient 15s ease infinite;
+    display: flex;
+    border-radius: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    /* margin-right: 24px; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.card-left h3 {
+    padding-top: 24px;
+    color: hsl(241, 100%, 89%);
+}
+
+.card-left p {
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+
+.card > div {
+    flex: 1;
+}
+
+.number-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 200px;
+    width: 120px;
+    height: 120px;
+
+    gap: 2px;
+    /* margin: 24px; */
+}
+
+.number-result h1 {
+    font-size: 40px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    gap: 8px;
+}
+
+
+/* CARD RIGHT */
+
+
+.card-right {
+    /* border: 1px solid blue;     */
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.card-right p {
+    /* border: 1px solid blue; */
+    display: flex;
+    padding: 12px;
+    gap: 6px;
+}
+
+.container-reaction {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(0, 100%, 67%, 0.13);
+    margin: 8px;
+}
+
+.reaction {
+    
+    /* border: 1px solid blue;   */
+    margin: 2px 0;
+    padding: 8px;
+    color:hsl(0, 100%, 67%);
+    display: flex;
+}
+
+.container-memory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(39, 100%, 56%, 0.13);
+    margin: 8px;
+}
+
+.memory {
+    margin: 2px 0;
+    padding: 8px;
+    color: hsl(39, 100%, 56%);
+}
+
+.container-verbal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(166, 100%, 37%, 0.13);
+    margin: 8px;
+}
+
+.verbal {
+    margin: 2px 0;
+    padding: 8px;
+    color: hsl(166, 100%, 37%);
+}
+
+.container-visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(234, 85%, 45%, 0.13);
+    margin: 8px;
+}
+
+.visual {
+    margin: 2px 0;
+    padding: 8px;
+    color: hsl(234, 85%, 45%);
+}
+
+/*.count {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}*/
+
+.count-black {
+    display: flex;
+    /* border: 1px solid blue;   */
+}
+
+/* .count-grey {
+    display: flex; 
+    color: grey;
+} */
+
+
+button {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    margin-top: 18px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    border-radius: 28px;
+    padding: 10px;
+    animation: gradient 15s ease infinite;
+}
+
+button:hover {
+    transition: transform 1.25s;
+    transform: scale(1.03);
+    cursor: pointer;
+}
